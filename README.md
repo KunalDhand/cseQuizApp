@@ -30,7 +30,7 @@ The Quiz App is a mobile application designed to provide users with an interacti
 
 ## Screenshots
 
-Include screenshots of your app here.
+For screenshots and video tutorials headover to [Screenshots Directory](https://github.com/kunaldhand/cseQuizApp/tree/master/screenshots)
 
 ## Dependencies
 
