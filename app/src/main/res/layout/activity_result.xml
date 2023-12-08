@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/resultMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/resultStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonColor"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:text="New Quiz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resultMain"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/totalQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Questions: X" />
+
+            <TextView
+                android:id="@+id/correctAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correct Answers: Y" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/passingPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passing Percentage: Z%" />
+
+            <TextView
+                android:id="@+id/resultPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result Percentage: W%" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feedbackRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otherInformation"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>
